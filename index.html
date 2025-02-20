@@ -10,33 +10,71 @@
     <title>Estrela do amanhã</title>
     <link rel="stylesheet" href="styles/index.css">
 </head>
+
 <body>
-    <div id="app">
-        <main>
-            <div class="main.container">main</div>
-            <div class="back">
-                <img src="assets/icons/arrow-left-02.svg" alt="back">
-                <span>Voltar</span>
-                <H1>Formulario de matricula</H1>
-                <p>Preencha os dados abaixo para matricular seu filho na escola de educação infantil Estrelas do Amanhã.</p>
-            </div>
-        </main>
+        <div id="app">
+            <main>
+                <div class="main.container">
+                    <div class="back">
+                        <img src="assets/icons/arrow-left-02.svg" alt="back">
+                        <span>Voltar</span>
+                        <H1>Formulario de matricula</H1>
+                        <p>Preencha os dados abaixo para matricular seu filho na escola de educação infantil Estrelas do Amanhã.</p>
 
-        <aside>
-            <div class="aside-container">aside</div>
-                <header>
-                    <img src="assets/icons/logo.svg" alt="logo">
-                    <h2>Porque cada momento de 
-                        <span>conta</span> 
-                    </h2>
-                    
-                    <p>Na escola de educação infantil Estrelas do Amanhã, acreditamos que cada momento de aprendizado é único e especial. Por isso, oferecemos um ambiente acolhedor e seguro, onde as crianças podem explorar, descobrir e aprender de forma lúdica e divertida.</p>
-                </header>
+                        <form method="post" enctype="multipart/form-data">
+                            <fieldset class="personal-info">
+                                <legend>Informações da criança</legend>
 
-                <img src="assets/Ilustrações.svg" alt="">
-            </div>
-        </aside>
+                                <div class="input-wrapper">
+                                    <label for="fullname">Nome completo</label>
+                                    <input id="fullname"type="text" placeholder="Qual o nome da criança">
+                                </div>  
+                                
+                                <div class="input-wrapper">
+                                    <label for="Data de nascimento"></label>
+                                    <input type="date" id="birth" lang="pt-BR">
+                                </div>
 
-    </div>
+                                <div class="select-wrapper">
+                                    <label for="Gender">Sexo</label>
+                                    <select name="gender" id="gender">
+                                        <option value="Male">Masculino</option>
+                                        <option value="Female">Feminino</option>
+                                        <option value="na">Prefiro não responder</option>
+                                    </select>
+                                    
+                                <div class="textrea-wrapp">
+                                    <label for="Medical-info">Informações médicas</label>
+                                    <textarea name="medical-info" id="medical-info" cols="30" rows="10" placeholder="A criança possui alguma condição médica que a escola deve estar ciente? (Se sim especifique)"></textarea>
+                                </div>    
+                                
+                                <div class="droparea-wrapper">
+                                    <input type="file" id="birth-file" name="birth-file">
+                                    <img src="assets/icons/cloud-upload.svg" alt="">
+                                    <p>Cliue aqui para<br>selcionar os aquivos</p>
+                                </div>
+                           
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>    
+            </main>
+          
+
+            <aside>
+                <div class="aside-container">
+                    <header>
+                        <img src="assets/Logo.svg" alt="logo">
+                        <h2>Porque cada momento de 
+                            <span>conta</span> 
+                        </h2>
+                        
+                        <p>Na escola de educação infantil Estrelas do Amanhã, acreditamos que cada momento de aprendizado é único e especial. Por isso, oferecemos um ambiente acolhedor e seguro, onde as crianças podem explorar, descobrir e aprender de forma lúdica e divertida.</p>
+                    </header>
+
+                    <img src="assets/Ilustrações.svg" alt="">
+                </div>
+            </aside>
+        </div>     
 </body>
 </html>
