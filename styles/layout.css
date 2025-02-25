@@ -32,7 +32,7 @@ asaide {
     background-color: var(--surface-secondary);
     padding: 4rem;
 
-    & .aside-container {
+    & .asaide-container {
         max-width: 31rem;
 
         & > img {
